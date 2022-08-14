@@ -1,9 +1,8 @@
 - mane: CD
-      uses: aws-actions/configure-aws-credentials@v3
-      with:
-        role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
-        aws-region: asia-east-1
+- job:
+- build: 
 - step: 
+     - run-on: Ubuntu-latest
 - name: Checkout
   uses: actions/checkout@v3
 
