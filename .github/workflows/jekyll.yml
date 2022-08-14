@@ -13,17 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
+    - name: Build the site in the docker/builder container
       run: |
-        docker run \
+        docker run ./site
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-
-- mane: Checkout
-  uses: actions/checkout@v3
-
-- name: Checkout tools repo
-  uses: actions/checkout@v3
-  with:
-    repository: my-org/my-tools
-    path: my-tools
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --implement -d
