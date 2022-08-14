@@ -1,10 +1,10 @@
-name: Jekyll site CI
+name: Jekyll-build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ""
   pull_request:
-    branches: [ "main" ]
+    branches: ""
 
 jobs:
   build:
@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the site in the docker/builder container
       run: |
-        docker run ./site
+        docker run \npm./\
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --implement -d
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --implement -echo
