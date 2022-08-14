@@ -1,4 +1,4 @@
-    - name: Configure AWS Credentials
+    - name: AWS-action
       uses: aws-actions/configure-aws-credentials@v3
       with:
         role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
