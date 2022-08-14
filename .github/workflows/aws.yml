@@ -1,5 +1,14 @@
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/configure-aws-credentials@v3
       with:
         role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
-        aws-region: us-east-2
+        aws-region: asia-east-1
+- step: 
+- name: Checkout
+  uses: actions/checkout@v3
+
+- name: Checkout tools repo
+  uses: actions/checkout@v3
+  with:
+    repository: my-org/my-tools
+    path: my-tools
