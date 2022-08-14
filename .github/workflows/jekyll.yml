@@ -19,7 +19,7 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
- step: Checkout
+- mane: Checkout
   uses: actions/checkout@v3
 
 - name: Checkout tools repo
