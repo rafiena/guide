@@ -28,9 +28,6 @@ jobs:
     - name: npm install
       run: npm install
 
-    - name: Bootstrap
-      run: npm run bootstrap
-
     - name: audit tools
       # `|| npm audit` to pretty-print the output if vulnerabilies are found after filtering.
       run: npm audit --audit-level=moderate --json | scripts/audit-allow-list || npm audit --audit-level=moderate
