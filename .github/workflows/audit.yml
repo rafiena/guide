@@ -1,4 +1,4 @@
-name: toolkit-audit
+name: audit-tool
 on:
   push:
     branches:
