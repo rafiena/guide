@@ -34,3 +34,6 @@ jobs:
 
     - name: audit packages
       run: npm run audit-all
+
+    - name: audit fix 
+    - run: npm run fix-all
