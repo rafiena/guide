@@ -18,8 +18,6 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="/css/styles.min.css?v=0.1"/>
 <script src="https://www.google.com/recaptcha/api.js?render=6LdqXa0UAAAAABc77NIcku_LdXJio9kaJVpYkgQJ" async></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118288579-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
